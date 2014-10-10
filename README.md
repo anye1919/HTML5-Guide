@@ -37,7 +37,7 @@ HTML5-Guide
     <footer></footer>
 
     <!-- Some Javascript here -->
-		<script src=""></script>
+    <script src=""></script>
 
   </body>
 </html>
@@ -66,4 +66,7 @@ video 元素允许多个 source 元素，source 元素可以链接不同的视�
 </video>
 ```
 
-video 元素更多属性见[这里](http://www.w3school.com.cn/tags/tag_video.asp)
+-video 元素更多属性见[这里](http://www.w3school.com.cn/tags/tag_video.asp)
+
+-使用 DOM 控制 video 控件见[这里](http://www.w3school.com.cn/html5/html_5_video_dom.asp)
+

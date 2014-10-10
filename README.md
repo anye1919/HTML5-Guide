@@ -87,12 +87,12 @@ audio 元素和 video 元素用法类似，就不赘述了，详情见[这里](h
   <body>
     <!-- 
       为img元素设置属性 draggable=true，让它可拖动
-      ondragstart 规定拖动时调用了drag函数，该函数设置了一个数据 DATA    
+      ondragstart规定拖动时调用了drag函数，该函数设置了一个数据DATA    
     -->
     <img id="drag1" src="image.gif" draggable="true" ondragstart="drag(event)">    
     <!--
-      ondragover 规定在何处放置被拖动元素，由于浏览器默认不可以把元素放到其他元素中，在 allowDrop 函数中阻止对元素的默认处理
-      当放置被拖数据时，会发生 drop 事件，触发 drop 函数，在此函数中把被拖动元素放到目标位置
+      ondragover规定在何处放置被拖动元素，由于浏览器默认不可以把元素放到其他元素中，在allowDrop函数中阻止对元素的默认处理
+      当放置被拖数据时，会发生drop事件，触发drop函数，在此函数中把被拖动元素放到目标位置
     -->
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
   </body>

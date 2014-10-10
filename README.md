@@ -72,3 +72,50 @@ video 元素允许多个 source 元素，source 元素可以链接不同的视�
 
 audio 元素和 video 元素用法类似，就不赘述了，详情见[这里](http://www.w3school.com.cn/html5/html_5_audio.asp)
 
+##拖放
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      #div1 {
+      	width: 488px;
+      	height: 70px;
+      	padding: 10px;
+      	border: 1px solid #aaa;
+      }
+    </style>
+    <script type="text/javascript">
+      function allowDrop(e) {
+        e.preventDefault();
+      }
+      function drag(e) {
+        e.dataTransfer.setData("DATA", e.target.id);
+      }
+      function drop(e) {
+        e.preventDefault();
+        var data = e.dataTransfer.getData("DATA");
+        e.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+
+    <!-- 
+      为img元素设置属性 draggable=true，让它可拖动
+      ondragstart 规定拖动时调用了drag函数，该函数设置了一个数据 DATA    
+    -->
+    <img id="drag1" src="image.gif" draggable="true" ondragstart="drag(event)">
+     
+    <!--
+			ondragover 规定在何处放置被拖动元素，由于浏览器默认不可以把元素放到其他元素中，在 allowDrop 函数中阻止对元素的默认处理
+			当放置被拖数据时，会发生 drop 事件，触发 drop 函数，在此函数中把被拖动元素放到目标位置
+    -->
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  </body>
+</html>
+```
+
+

@@ -3,7 +3,7 @@ HTML5-Guide
 
 一个典型的 html 文件结构
 
-```
+```html5
 <!DOCTYPE html>
 <html lang="en">
 <head>

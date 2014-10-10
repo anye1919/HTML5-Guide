@@ -17,7 +17,7 @@ Your browser does not support the video tag.
 </video>	
 ```
 
--video 元素允许多个 source 元素。source 元素可以链接不同的视频文件。浏览器将使用第一个可识别的格
+*video 元素允许多个 source 元素。source 元素可以链接不同的视频文件。浏览器将使用第一个可识别的格*
 
 ```html
 <video width="320" height="240" controls="controls">

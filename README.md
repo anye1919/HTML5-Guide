@@ -68,17 +68,8 @@ audio 元素和 video 元素用法类似，就不赘述了，详情见[这里](h
 ##拖放
 
 ```html
-<!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      #div1 {
-      	width: 488px;
-      	height: 70px;
-      	padding: 10px;
-      	border: 1px solid #aaa;
-      }
-    </style>
     <script type="text/javascript">
       function allowDrop(e) {
         e.preventDefault();

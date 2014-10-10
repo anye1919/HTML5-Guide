@@ -71,12 +71,15 @@ audio 元素和 video 元素用法类似，就不赘述了，详情见[这里](h
 <html>
   <head>
     <script type="text/javascript">
+      // 允许元素被拖动
       function allowDrop(e) {
         e.preventDefault();
       }
+      // 拖动时的处理
       function drag(e) {
         e.dataTransfer.setData("DATA", e.target.id);
       }
+      // 放置时的处理
       function drop(e) {
         e.preventDefault();
         var data = e.dataTransfer.getData("DATA");

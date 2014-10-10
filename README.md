@@ -2,8 +2,11 @@ HTML5-Guide
 ===========
 
 ##input元素 
-	<input type="email" placehold="只能输入邮件地址"> 
-	<input type="number" min="0" max="4" step="1">
+
+```
+<input type="email" placehold="只能输入邮件地址"> 
+<input type="number" min="0" max="4" step="1">
+```
 
 
 ##video元素

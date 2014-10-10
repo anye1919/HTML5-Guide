@@ -38,7 +38,6 @@ HTML5-Guide
 
     <!-- Some Javascript here -->
     <script src=""></script>
-
   </body>
 </html>
 ```
@@ -49,7 +48,6 @@ HTML5-Guide
 <input type="email" placehold="只能输入邮件地址"> 
 <input type="number" min="0" max="4" step="1">
 ```
-
 
 ##video元素
 
@@ -69,4 +67,8 @@ video 元素允许多个 source 元素，source 元素可以链接不同的视�
 - video 元素更多属性见[这里](http://www.w3school.com.cn/tags/tag_video.asp)
 
 - 使用 DOM 控制 video 控件见[这里](http://www.w3school.com.cn/html5/html_5_video_dom.asp)
+
+##audio元素
+
+audio 元素和 video 元素用法类似，就不赘述了，详情见[这里](http://www.w3school.com.cn/html5/html_5_audio.asp)
 

@@ -54,9 +54,7 @@ HTML5-Guide
 ##video元素
 
 ```html
-<video src="movie.ogg" width="320" height="240" controls="controls">
-Your browser does not support the video tag.
-</video>	
+<video src="movie.ogg" width="320" height="240" controls="controls"></video>	
 ```
 
 *video 元素允许多个 source 元素，source 元素可以链接不同的视频文件，浏览器将使用第一个可识别的格式，各浏览器支持的视频格式列表见[这里](http://www.w3school.com.cn/html5/html_5_video.asp)*
@@ -65,7 +63,6 @@ Your browser does not support the video tag.
 <video width="320" height="240" controls="controls">
   <source src="movie.ogg" type="video/ogg">
   <source src="movie.mp4" type="video/mp4">
-Your browser does not support the video tag.
 </video>
 ```
 

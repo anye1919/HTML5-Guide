@@ -29,7 +29,7 @@ HTML5-Guide
     <header></header>
     <main></main>
     <footer></footer>
-    <!-- Some Javascript here -->
+    <!-- Some JavaScript here -->
     <script src=""></script>
   </body>
 </html>
@@ -70,7 +70,7 @@ HTML5-Guide
 ```html
 <html>
   <head>
-    <script type="text/javascript">
+    <script>
       // 允许元素被拖动
       function allowDrop(e) {
         e.preventDefault();

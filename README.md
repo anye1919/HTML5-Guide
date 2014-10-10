@@ -1,7 +1,7 @@
 HTML5-Guide
 ===========
 
-一个典型的 html 文件结构
+##一个典型的 html5 文件结构
 
 ```html
 <!DOCTYPE html>

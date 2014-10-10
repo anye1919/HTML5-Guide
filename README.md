@@ -3,7 +3,7 @@ HTML5-Guide
 
 ##input元素 
 
-```
+```html
 <input type="email" placehold="只能输入邮件地址"> 
 <input type="number" min="0" max="4" step="1">
 ```
@@ -11,7 +11,7 @@ HTML5-Guide
 
 ##video元素
 
-```
+```html
 <video src="movie.ogg" width="320" height="240" controls="controls">
 Your browser does not support the video tag.
 </video>	

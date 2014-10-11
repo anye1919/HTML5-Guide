@@ -94,7 +94,7 @@ HTML5-Guide
     -->
     <img id="drag1" src="image.gif" draggable="true" ondragstart="drag(event)">    
     <!--
-      ondragover规定在何处放置被拖动元素，由于浏览器默认不可以把元素放到其他元素中，在allowDrop函数中阻止对元素的默认处理
+      ondragover规定在何处放置被拖动元素（浏览器默认不能把元素放到其他元素中，allowDrop函数阻止了默认动作）
       当放置被拖数据时，会发生drop事件，触发drop函数，在此函数中把被拖动元素放到目标位置
     -->
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -114,7 +114,7 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 
 ###绘制矩形
 
-```JavaScript
+```html
 <script>
   // 获取画布元素
   var c = document.getElementById('myCanvas');
@@ -128,7 +128,7 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 
 ###绘制线条
 
-```JavaScript
+```html
 <script>
   // 获取画布元素
   var c = document.getElementById('myCanvas');

@@ -156,3 +156,16 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 ```
 
 - canvas 元素更多用法见[这里](http://www.w3school.com.cn/html5/html_5_canvas.asp)
+
+##在客户端存储数据
+
+- localStorage - 没有时间限制的数据存储
+- sessionStorage - 针对一个 session 的数据存储
+
+```html
+<script>
+  localStorage.username = 'July';
+  sessionStorage.username = 'July';
+</script>
+```
+

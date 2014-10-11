@@ -94,7 +94,7 @@ HTML5-Guide
     -->
     <img id="drag1" src="image.gif" draggable="true" ondragstart="drag(event)">    
     <!--
-      ondragover规定在何处放置被拖动元素（浏览器默认不能把元素放到其他元素中，allowDrop函数阻止了默认动作）
+      ondragover规定在何处放置被拖动元素（默认不能把元素放到其他元素中，allowDrop函数阻止了默认动作）
       当放置被拖数据时，会发生drop事件，触发drop函数，在此函数中把被拖动元素放到目标位置
     -->
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -148,8 +148,8 @@ canvas 元素使用 JavaScript 在网页上绘制图像
   var cxt = c.getContext('2d');
   cxt.fillStyle = '#FF0000';
   cxt.beginPath(); // 打开路径
-  // 绘制弧形：arc(x,y,[半径],[开始弧度],[结束弧度],[true顺时针绘制,false逆时针绘制])
-  cxt.arc(70,18,15,0,Math.PI*2,true); // Math.PI*2为360度
+  // 绘制弧形：arc(x, y, [半径], [开始弧度], [结束弧度], [true顺时针绘制,false逆时针绘制])
+  cxt.arc(70, 18, 15, 0, Math.PI*2, true); // Math.PI*2为360度
   cxt.closePath(); // 关闭路径
   cxt.fill(); // 填充方法
 </script>

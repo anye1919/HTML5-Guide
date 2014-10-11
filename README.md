@@ -108,11 +108,13 @@ HTML5-Guide
 
 canvas 元素使用 JavaScript 在网页上绘制图像
 
-###绘制一个矩形
-
 ```html
 <canvas id="myCanvas" width="200" height="100"></canvas>
+```
 
+###绘制矩形
+
+```JavaScript
 <script>
   // 获取画布元素
   var c = document.getElementById('myCanvas');
@@ -124,5 +126,18 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 </script>
 ```
 
+###绘制线条
 
-
+```JavaScript
+<script>
+  // 获取画布元素
+  var c = document.getElementById('myCanvas');
+  // 创建tontext对象，context对象是内建的HTML5对象，拥有绘制路径、矩形、圆形以及添加图像等方法
+  var ctx = c.getContext('2d');
+  // 通过指定从何处开始，在何处结束，来绘制一条线
+  ctx.moveTo(10, 10);
+  ctx.lineTo(150, 50);
+  ctx.lineTo(10, 50);
+  ctx.stroke();
+</script>
+```

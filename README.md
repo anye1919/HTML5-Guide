@@ -94,7 +94,7 @@ HTML5-Guide
     -->
     <img id="drag1" src="image.gif" draggable="true" ondragstart="drag(event)">    
     <!--
-      具有ondragover属性的元素可放置被拖动元素（默认不能把元素放到其他元素，必须阻止浏览器默认动作）
+      具有ondragover属性的元素可放置被拖动元素（此方法中阻止了浏览器默认动作）
       当放置被拖数据时，会发生drop事件，触发drop函数，在此函数中把被拖动元素放到目标位置
     -->
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>

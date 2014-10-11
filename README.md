@@ -114,13 +114,13 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 <canvas id="myCanvas" width="200" height="100"></canvas>
 
 <script>
-	// 获取画布元素
-	var c = document.getElementById('myCanvas');
-	// 创建tontext对象，context对象是内建的HTML5对象，拥有绘制路径、矩形、圆形以及添加图像等方法
-	var ctx = c.getContext('2d');
-	// 从左上角(0,0)开始，绘制一个长宽为(150,75)的矩形，tontext对象的fillStyle属性设置矩形为红色
-	ctx.fillStyle = '#FF0000';
-	ctx.fillRect(0,0,150,75);
+  // 获取画布元素
+  var c = document.getElementById('myCanvas');
+  // 创建tontext对象，context对象是内建的HTML5对象，拥有绘制路径、矩形、圆形以及添加图像等方法
+  var ctx = c.getContext('2d');
+  // 从左上角(0,0)开始，绘制一个长宽为(150,75)的矩形，tontext对象的fillStyle属性设置矩形为红色
+  ctx.fillStyle = '#FF0000';
+  ctx.fillRect(0,0,150,75);
 </script>
 ```
 

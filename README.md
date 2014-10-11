@@ -120,9 +120,9 @@ canvas 元素使用 JavaScript 在网页上绘制图像
   var c = document.getElementById('myCanvas');
   // 创建tontext对象，context对象是内建的HTML5对象，拥有绘制路径、矩形、圆形以及添加图像等方法
   var ctx = c.getContext('2d');
-  // 从左上角(0,0)开始，绘制一个长宽为(150,75)的矩形，tontext对象的fillStyle属性设置矩形为红色
-  ctx.fillStyle = '#FF0000';
-  ctx.fillRect(0,0,150,75);
+  // 从左上角(0,0)开始，绘制一个长宽为(150,75)的矩形
+  ctx.fillStyle = '#FF0000'; // 填充颜色
+  ctx.fillRect(0,0,150,75); // 矩形填充方法
 </script>
 ```
 
@@ -130,14 +130,29 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 
 ```html
 <script>
-  // 获取画布元素
   var c = document.getElementById('myCanvas');
-  // 创建tontext对象，context对象是内建的HTML5对象，拥有绘制路径、矩形、圆形以及添加图像等方法
   var ctx = c.getContext('2d');
   // 通过指定从何处开始，在何处结束，来绘制一条线
-  ctx.moveTo(10, 10);
-  ctx.lineTo(150, 50);
+  ctx.moveTo(10, 10); // 拿起画笔，移动画点到(x,y)坐标
+  ctx.lineTo(150, 50); // 使用画笔，从画点开始画线到(x,y)坐标
   ctx.lineTo(10, 50);
-  ctx.stroke();
+  ctx.stroke(); // 画线方法
 </script>
 ```
+
+###绘制圆形
+
+```html
+<script>
+  var c = document.getElementById('myCanvas');
+  var cxt = c.getContext('2d');
+  cxt.fillStyle = '#FF0000';
+  cxt.beginPath(); // 打开路径
+  // 绘制弧形：arc(x,y,[半径],[开始弧度],[结束弧度],[true顺时针绘制,false逆时针绘制])
+  cxt.arc(70,18,15,0,Math.PI*2,true); // Math.PI*2为360度
+  cxt.closePath(); // 关闭路径
+  cxt.fill(); // 填充方法
+</script>
+```
+
+- canvas 元素更多用法见[这里](http://www.w3school.com.cn/html5/html_5_canvas.asp)

@@ -35,13 +35,6 @@ HTML5-Guide
 </html>
 ```
 
-##input元素 
-
-```html
-<input type="email" placehold="只能输入邮件地址"> 
-<input type="number" min="0" max="4" step="1">
-```
-
 ##video元素
 
 ```html
@@ -169,3 +162,49 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 </script>
 ```
 
+##input元素 
+
+- 必填项添加 `required` 属性
+
+###email 
+
+```html
+<input type="email" name="user_email"> 
+```
+
+###url 
+
+```html
+<input type="url" name="user_url"> 
+```
+
+###number 
+
+```html
+<input type="number" name="points" min="1" max="10" step="2">
+```
+
+###range - 滑动条
+
+```html
+<input type="range" name="points" min="1" max="10">
+```
+
+###Date Pickers - 日期选择器
+
+- date - 选取日、月、年
+- month - 选取月、年
+- week - 选取周和年
+- time - 选取时间（小时和分钟）
+- datetime - 选取时间、日、月、年（UTC 时间）
+- datetime-local - 选取时间、日、月、年（本地时间）
+
+```html
+<input type="date" name="user_date">
+```
+
+###search 
+
+```html
+<input type="search" name="search"> 
+```

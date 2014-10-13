@@ -35,7 +35,7 @@ HTML5-Guide
 </html>
 ```
 
-##video元素
+##video 元素
 
 ```html
 <video src="movie.ogg" width="320" height="240" controls="controls"></video>	
@@ -54,7 +54,7 @@ HTML5-Guide
 
 - 使用 DOM 控制 video 控件见[这里](http://www.w3school.com.cn/html5/html_5_video_dom.asp)
 
-##audio元素
+##audio 元素
 
 - audio 元素和 video 元素用法类似，就不赘述了，详情见[这里](http://www.w3school.com.cn/html5/html_5_audio.asp)
 
@@ -97,7 +97,7 @@ HTML5-Guide
 
 - 来回拖动的例子见[这里](http://www.w3school.com.cn/tiy/t.asp?f=html5_draganddrop2)
 
-##canvas元素
+##canvas 元素
 
 canvas 元素使用 JavaScript 在网页上绘制图像
 
@@ -162,7 +162,7 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 </script>
 ```
 
-##input元素 
+##input 元素 
 
 - 必填项添加 `required` 属性
 
@@ -207,4 +207,17 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 
 ```html
 <input type="search" name="search"> 
+```
+
+##datalist 元素 
+
+通过 datalist 创建一组数据列表，可以把 datalist 绑定到输入域，用输入域的 list 属性引用 datalist 的 id。
+
+```html
+<input type="url" list="url_list" name="link" />
+<datalist id="url_list">
+	<option label="W3School" value="http://www.W3School.com.cn" />
+	<option label="Google" value="http://www.google.com" />
+	<option label="Microsoft" value="http://www.microsoft.com" />
+</datalist>
 ```

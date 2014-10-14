@@ -216,8 +216,8 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 ```html
 <input type="url" list="url_list" name="link" />
 <datalist id="url_list">
-	<option label="W3School" value="http://www.W3School.com.cn" />
-	<option label="Google" value="http://www.google.com" />
-	<option label="Microsoft" value="http://www.microsoft.com" />
+	<option label="Google" value="https://google.com" />
+	<option label="Facebook" value="https://facebook.com" />
+	<option label="GitHub" value="https://github.com" />
 </datalist>
 ```

@@ -222,38 +222,38 @@ canvas 元素使用 JavaScript 在网页上绘制图像
 </datalist>
 ```
 
-##<address> 标签
+##address 元素 
 
-<address> 标签定义文档或文章的作者/拥有者的联系信息。
+address 元素定义文档或文章的作者/拥有者的联系信息。
 
-<address> 元素中的文本通常以斜体显示，大多数浏览器会在 address 元素前后添加折行。
+address 元素中的文本通常以斜体显示，大多数浏览器会在 address 元素前后添加折行。
 
-##<article> 标签
+##article 元素 
 
-<article> 标签规定独立的自包含内容。
+article 元素规定独立的自包含内容。
 
-<article> 元素的潜在来源：
+article 元素的潜在来源：
 - 论坛帖子
 - 报纸文章
 - 博客条目
 - 用户评论
 
-##<header> 标签
+##header 元素 
 
-<header> 标签定义文档的页眉（介绍信息）。
+header 元素定义文档的页眉（介绍信息）。
 
-##<footer> 标签
+##footer 元素
 
-<footer> 标签定义文档或节的页脚，页脚通常包含文档的作者、版权信息、使用条款链接、联系信息等等。
+footer 元素定义文档或节的页脚，页脚通常包含文档的作者、版权信息、使用条款链接、联系信息等等。
 
-##<nav> 标签
+##nav 元素
 
-<nav> 标签定义导航链接的部分。
+nav 元素定义导航链接的部分。
 
-##<progress> 标签
+##progress 元素
 
-<progress> 标签标示任务的进度（进程）。
+progress 元素标示任务的进度（进程）。
 
-##<section> 标签
+##section 元素
 
-<section> 标签定义文档中的节（section、区段），比如章节、页眉、页脚或文档中的其他部分。
+section 元素定义文档中的节（section、区段），比如章节、页眉、页脚或文档中的其他部分。
